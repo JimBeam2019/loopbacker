@@ -1,0 +1,13 @@
+{
+    "ids":{
+        "Meal": 5
+    },
+    "models": {
+        "Meal": {
+            "1": "{\"id\":1,\"title\":\"Pancakes\",\"price\":12.45}",
+            "2": "{\"id\":2,\"title\":\"Gumbo\",\"price\":45.95}",
+            "3": "{\"id\":3,\"title\":\"Pizza\",\"price\":38}",
+            "4": "{\"id\":4,\"title\":\"Ramen\",\"price\":48.99}"
+        }
+    }
+}
