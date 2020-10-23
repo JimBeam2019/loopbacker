@@ -1,4 +1,5 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {MealList, MealListRelations, MealListWithRelations} from './meal-list.model';
 
 @model()
 export class Meal extends Entity {
@@ -21,6 +22,8 @@ export class Meal extends Entity {
   })
   price: number;
 
+  @belongsTo(() => MealList)
+  mealListId: number;
 
   constructor(data?: Partial<Meal>) {
     super(data);
@@ -29,6 +32,7 @@ export class Meal extends Entity {
 
 export interface MealRelations {
   // describe navigational properties here
+  mealList?: MealListWithRelations;
 }
 
 export type MealWithRelations = Meal & MealRelations;

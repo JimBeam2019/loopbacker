@@ -1,13 +1,18 @@
 {
     "ids":{
-        "Meal": 5
+        "Meal": 5,
+        "MealList": 3
     },
     "models": {
         "Meal": {
-            "1": "{\"id\":1,\"title\":\"Pancakes\",\"price\":12.45}",
-            "2": "{\"id\":2,\"title\":\"Gumbo\",\"price\":45.95}",
-            "3": "{\"id\":3,\"title\":\"Pizza\",\"price\":38}",
-            "4": "{\"id\":4,\"title\":\"Ramen\",\"price\":48.99}"
+            "1": "{\"id\":1,\"title\":\"Pancakes\",\"price\":12.45,\"mealListId\":1}",
+            "2": "{\"id\":2,\"title\":\"Gumbo\",\"price\":45.95,\"mealListId\":2}",
+            "3": "{\"id\":3,\"title\":\"Pizza\",\"price\":38,\"mealListId\":2}",
+            "4": "{\"id\":4,\"title\":\"Ramen\",\"price\":48.99,\"mealListId\":2}"
+        },
+        "MealList": {
+            "1": "{\"id\":1,\"title\":\"Breakfast\",\"type\":\"Morning\"}",
+            "2": "{\"id\":2,\"title\":\"Main\",\"type\":\"All-Day\"}"
         }
     }
 }
